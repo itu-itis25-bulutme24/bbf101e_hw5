@@ -30,6 +30,29 @@
   </p>
 
   <br><br>
+  <br><br>
+  <button id="colorBtn" onclick="cycleColors()">Change Colors!</button>
+
+  <script>
+    // Renkleri tutan bir dizi (Array) tanımlıyoruz [cite: 395]
+    const colors = ['red', 'blue', 'green', 'gray'];
+    
+    // Hangi sırada olduğumuzu tutan sayaç değişkeni
+    let colorIndex = 0;
+
+    function cycleColors() {
+      // Buton elementini seçiyoruz
+      const button = document.getElementById("colorBtn");
+      
+      // Butonun arka plan rengini dizideki sıradaki renk yapıyoruz
+      button.style.backgroundColor = colors[colorIndex];
+      
+      // Sayacı bir artırıyoruz. 
+      // Modulo (%) operatörü kullanarak sayacın 0, 1, 2, 3 döngüsünde kalmasını sağlıyoruz.
+      // Bu sayede 4. renkten sonra tekrar başa (0'a) döner[cite: 402, 403].
+      colorIndex = (colorIndex + 1) % colors.length;
+    }
+  </script>
   <a href="https://github.com/itu-itis25-bulutme24"> <img src="github_icon.png" alt="GitHub Icon"> </a>
 
   <h4>Courses that I am taking</h4>
