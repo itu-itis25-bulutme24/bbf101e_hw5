@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <title> FORM </title>
+    <style>
+        div { margin-bottom: 10px; }
+        label { display: inline-block; width: 200px; }
+    </style>
+</head>
+<body>
+
+<form id="formID" onsubmit="formSubmitted(event)"> <fieldset>
+        <legend> FORM </legend>
+
+        <div>
+            <label for="name"> Name & Surname </label>
+            <input placeholder="Username" id="name">
+        </div>
+
+        <div>
+            <label for="id"> Student ID </label>
+            <input placeholder="Student ID" id="id">
+        </div>
+
+        <div>
+            <label for="age"> Age </label>
+            <input id="age" type="number" name="age" value="0">
+        </div>
+
+        <div>
+            <label for="email"> Email </label>
+            <input type="email" id="email">
+        </div>
+
+        <div>
+            <label for="birthdate"> Birthdate </label>
+            <input type="date" id="birthdate">
+        </div>
+
+        <div>
+            <label for="password"> Password </label>
+            <input type="password" placeholder="Password" id="password">
+        </div>
+
+        <div>
+            <label for="wellcheck"> I read the assignment description well. </label>
+            <input type="checkbox" id="wellcheck">
+        </div>
+
+        <div>
+            <label for="askcheck"> I asked my friends to what to do. </label>
+            <input type="checkbox" id="askcheck">
+        </div>
+
+        <div>
+            <label for="wellradio"> I read the assignment description. </label>
+            <input type="radio" name="read" id="wellradio">
+            <br>
+            <label for="askradio"> I asked my friends to what to do. </label>
+            <input type="radio" name="read" id="askradio">
+        </div>
+
+        <div>
+            <label for="others"> Others </label>
+            <textarea id="others"></textarea>
+        </div>
+
+        <button type="reset"> Reset </button>
+        <button type="submit"> Submit </button>
+    </fieldset>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
